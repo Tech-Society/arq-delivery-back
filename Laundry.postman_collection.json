@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "5cf7c824-70ce-4fcd-99d9-dccfc1f06bb4",
+		"name": "Laundry",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "List All Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/9082f6a3-01db-4371-b897-a7f170b785bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"9082f6a3-01db-4371-b897-a7f170b785bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Cristhoper\"\n    , \"full_name\": \"Alvarez\"\n    , \"address\": \"Villa el Salvador\"\n    , \"phone\": \"934019008\"\n    , \"email\": \"acristhoper25@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Harol\"\n    , \"full_name\": \"Ñahuina\"\n    , \"address\": \"Villa el\"\n    , \"phone\": \"111111111\"\n    , \"email\": \"cnahuina@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/9082f6a3-01db-4371-b897-a7f170b785bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"9082f6a3-01db-4371-b897-a7f170b785bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/9082f6a3-01db-4371-b897-a7f170b785bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"9082f6a3-01db-4371-b897-a7f170b785bf"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get All Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/employee/f1e5e1a5-b42b-439e-90c8-e52a75c00cd1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"f1e5e1a5-b42b-439e-90c8-e52a75c00cd1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Cristhoper\"\n    , \"full_name\": \"Alvarez\"\n    , \"address\": \"Villa el Salvador\"\n    , \"phone\": \"934019008\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Veronica\"\n    , \"full_name\": \"Mendoza\"\n    , \"address\": \"Villa\"\n    , \"phone\": \"123456789\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/f1e5e1a5-b42b-439e-90c8-e52a75c00cd1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"f1e5e1a5-b42b-439e-90c8-e52a75c00cd1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/employee/f1e5e1a5-b42b-439e-90c8-e52a75c00cd1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"f1e5e1a5-b42b-439e-90c8-e52a75c00cd1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Clothing Type",
+			"item": [
+				{
+					"name": "Get All Clothing Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clothing-type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothing-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clothing Type By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clothing-type/58cd0852-773c-4dcc-8e70-826f36e8e07d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothing-type",
+								"58cd0852-773c-4dcc-8e70-826f36e8e07d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Clothing Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"Algodon\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clothing-type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothing-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Clothing Type",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"tela\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clothing-type/58cd0852-773c-4dcc-8e70-826f36e8e07d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothing-type",
+								"58cd0852-773c-4dcc-8e70-826f36e8e07d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Clothing type",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clothing-type/58cd0852-773c-4dcc-8e70-826f36e8e07d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothing-type",
+								"58cd0852-773c-4dcc-8e70-826f36e8e07d"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0f406a72-1bb9-419a-b7dc-b9edb6f796ac",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "9851826c-101a-4c92-9b94-a05a642a57df",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
